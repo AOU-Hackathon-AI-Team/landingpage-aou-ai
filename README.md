@@ -1,2 +1,0 @@
-# AOU Hackathon Landing Page
-
