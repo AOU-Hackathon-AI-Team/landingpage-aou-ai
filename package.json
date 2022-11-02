@@ -1,0 +1,26 @@
+{
+  "name": "aou-hackathon-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"pnpm src\" \"pnpm temp\"",
+    "clean": "concurrently \"pnpm src:clean\" \"pnpm temp:clean\" \"rm shared/style/main.css\"",
+    "src": "windicss src/**/*.html -f windi.config.js -ads --style",
+    "src:clean": "find src -type f -name '*.windi.css' -delete",
+    "temp": "windicss shared/components/*.html -f windi.config.js -adzmo shared/style/main.css --style",
+    "temp:sep": "concurrently \"pnpm temp\" \"pnpm windicss shared/components/*.html -f windi.config.js -adszm --style\"",
+    "temp:test": "windicss shared/templates/tests/**/*.html -f windi.config.js -ads --style",
+    "temp:clean": "find shared/templates -type f -name '*.windi.css' -delete"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@windicss/plugin-icons": "^1.0.2",
+    "@windicss/plugin-scrollbar": "^1.2.3",
+    "concurrently": "^7.2.1",
+    "windicss": "^3.5.4"
+  }
+}
