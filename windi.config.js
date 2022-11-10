@@ -47,7 +47,8 @@ module.exports = {
      
       },
       fontFamily: {
-        f0: ['Raqami']
+        f0: ['Raqami'],
+        f1: ["'Press Start 2P'"]
       },
       fontWeight: {
       
