@@ -13,7 +13,8 @@ module.exports = {
   },
   separator: ":",
   shortcuts: {
-    
+    'bg-0': "bg-gradient-to-tl from-w-50 to-w-500",
+    'header1': "font-f0 font-bold text-7rem"
   },
   theme: {
     screens: {
@@ -30,7 +31,14 @@ module.exports = {
     },
     extend: {
       colors: {
-     
+        b: {
+          900: '#000'
+        },
+        w: {
+          50: '#fff',
+          500:'#7C7C7C',
+          700: '#D9D9D9'
+        }
       },
       boxShadow: {
        
@@ -39,11 +47,13 @@ module.exports = {
      
       },
       fontFamily: {
-      
+        f0: ['Raqami'],
+        f1: ["'Press Start 2P'"]
       },
       fontWeight: {
       
       },
+      
     },
   },
   plugins: [
