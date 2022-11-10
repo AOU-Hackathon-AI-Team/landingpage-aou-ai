@@ -11,7 +11,7 @@
   <link href="./index.windi.css" rel="stylesheet">
   <style lang="windi">
     html {
-      @apply text-[67%]
+      @apply text-[67%];
     }
     body {
       @apply overflow-y-hidden;
@@ -60,13 +60,35 @@
       .btn {
         @apply py-12px px-40px bg-w-500 border-solid border-4px text-2.4rem leading-3rem;
       }
+
+      header {
+        @apply text-8.7rem leading-3rem text-center mt-5rem font-f0;
+      }
+      
+      .goals {
+
+        @apply flex justify-center gap-20px flex-wrap font-f0 my-auto;
+        & .card {
+          @apply max-w-312px  max-h-366px flex flex-col gap-10px border-solid border-5px p-1rem bg-white;
+          @apply h-full w-full flex-wrap text-right;
+          & .img {
+            @apply w-full h-50px bg-w-500;
+          }
+          & .label {
+            @apply text-2.6rem leading-2.6rem mt-auto;
+          }
+          & p {
+            @apply text-1.6rem leading-3rem text-right;
+          }
+        } 
+      }
   </style>
 </head>
 
 <body >
   <div id="fullPage" class="bg-0">
    
-  <section class=" w-100wh h-100vh">
+  <section class=" w-100vw h-100vh">
     <div class="wrapper">
       <nav class="header">
         <div class="logo"></div> <span></span> <a>Link 1</a><a>Link 2</a><a>Link 3</a>
@@ -90,10 +112,41 @@
       </div>
     </div>
   </section>
-  <section class=" w-100wh h-100vh">
-    <h1 class="header1 testSeciton">تجربه</h1>
+
+  <section class=" w-100vw h-100vh">
+   <header>
+    اهدف المسابقه
+   </header>
+
+   <div class="goals " >
+    <div class="card">
+      <div class="img"></div>
+      <div class="label">ما هو "لوريم إيبسوم" ؟
+      </div>
+      <p>مطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة </p>
+    </div>
+    <div class="card">
+      <div class="img"></div>
+      <div class="label">ما هو "لوريم إيبسوم" ؟
+      </div>
+      <p>مطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة </p>
+    </div>
+    <div class="card">
+      <div class="img"></div>
+      <div class="label">ما هو "لوريم إيبسوم" ؟
+      </div>
+      <p>مطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة </p>
+    </div>
+    <div class="card">
+      <div class="img"></div>
+      <div class="label">ما هو "لوريم إيبسوم" ؟
+      </div>
+      <p>مطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة </p>
+    </div>
+
+   </div>
   </section>
-  <section class=" w-100wh h-100vh">
+  <section class=" w-100vw h-100vh">
     <h1 class="header1 testSeciton">تجربه</h1>
   </section>
  
