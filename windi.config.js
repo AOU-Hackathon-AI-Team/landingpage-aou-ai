@@ -31,8 +31,12 @@ module.exports = {
     },
     extend: {
       colors: {
+        co1: '#A0B5C5',
+        bg: {
+          1: '#222124'
+        },
         b: {
-          900: '#000'
+          900: '#000',
         },
         w: {
           50: '#fff',
@@ -48,7 +52,9 @@ module.exports = {
       },
       fontFamily: {
         f0: ['Raqami'],
-        f1: ["'Press Start 2P'"]
+        f1: ["'Press Start 2P'"],
+        f2: ["'Janna LT'"],
+        f3: ["'Console'"],
       },
       fontWeight: {
       
