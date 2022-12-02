@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <style lang="windi">
+        #heroBannar {
+            @apply  grid min-h-[832px] h-100vh  justify-between;
+            grid-template-columns: 60% 35%;
+
+            @screen md {
+                @apply flex flex-col-reverse;
+
+            }
+            @screen sm {
+                @apply flex flex-col-reverse;
+
+            }
+            & picture {
+                @apply self-end;
+                & img {
+                    @apply w-[90%] h-auto;
+                }
+           @screen md {
+                @apply w-full h-auto;
+
+            }
+            }
+            & .main_text {
+                @apply  text-right self-center pr-[10%] ;
+                & p {
+                    @apply font-f2 font-bold text-[3rem] text-white leading-[54.46px];
+                }
+                & .btn {
+                    @apply w-[178.5px] h-[49px] ml-auto;
+                }
+            }
+        }
+    </style> 
+</head>
+<body>
+    <section id="heroBannar" class="bg-bg-1">
+        <picture>
+            <img src="../image/hero.png">
+        </picture>
+  
+  
+        <div class="main_text">
+            <p>
+                عن هاكاثون عن هاكاثون عن هاكاثون
+                عن هاكاثون عن هاكاثون
+            </p>
+            <button class="btn style one">
+                شارك الان
+            </button>
+        </div>
+    </section>
+</body>
+</html>
