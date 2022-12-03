@@ -33,10 +33,12 @@ module.exports = {
       colors: {
         co1: '#A0B5C5',
         bg: {
-          1: '#222124'
+          1: '#222124',
+          2: "#3D3C40"
         },
         b: {
           900: '#000',
+          
         },
         w: {
           50: '#fff',
@@ -45,7 +47,9 @@ module.exports = {
         }
       },
       boxShadow: {
-       
+       btn: "5px 4px 7px 0px #00000040,1px 1px 2px 0px #00000040, -2px -1px 2px 0px #3E3E3EA8,  -6px 4px 7px 0px #00000066",
+       track: ' 0px 4px 9px 0px #00000042'
+
       },
       borderRadius: {
      
