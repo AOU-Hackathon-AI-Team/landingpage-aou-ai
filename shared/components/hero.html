@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../style/fonts.css">
     <style lang="windi">
         #heroBannar {
-            @apply  grid min-h-[832px] h-100vh  justify-between;
-            grid-template-columns: 60% 35%;
+            @apply  grid min-h-[832px] h-100vh  justify-between relative z-0;
+            grid-template-columns:38%  60% ;
 
             @screen md {
                 @apply flex flex-col-reverse;
@@ -44,11 +44,6 @@
 </head>
 <body>
     <section id="heroBannar" class="bg-bg-1">
-        <picture>
-            <img src="../image/hero.png">
-        </picture>
-  
-  
         <div class="main_text">
             <p>
                 عن هاكاثون عن هاكاثون عن هاكاثون
@@ -58,6 +53,12 @@
                 شارك الان
             </button>
         </div>
+        <picture>
+            <img src="../image/hero.png">
+        </picture>
+  
+  
+        
     </section>
 </body>
 </html>

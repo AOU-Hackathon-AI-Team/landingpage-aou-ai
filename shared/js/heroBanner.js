@@ -1,9 +1,4 @@
 const heroBanner = `
-<picture>
-            <img src="${window.location.origin}/shared/image/hero.png">
-        </picture>
-  
-  
         <div class="main_text">
             <p>
                 عن هاكاثون عن هاكاثون عن هاكاثون
@@ -13,8 +8,9 @@ const heroBanner = `
                 شارك الان
             </button>
         </div>
-
+        <picture>
+        <img src="${window.location.origin}/shared/image/hero.png">
+    </picture>
+       
 `;
-console.log('location ==> ',window.location);
-console.log('location ==> ',`${window.location.origin}/shared/image/hero.png`);
 document.getElementById('heroBannar').innerHTML = heroBanner;
