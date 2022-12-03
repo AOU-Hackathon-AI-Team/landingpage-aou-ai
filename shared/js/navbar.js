@@ -23,4 +23,4 @@ const navbar = `
 `
 
 
-document.getElementById('navbar').innerHTML = navbar;
+// document.getElementById('navbar').innerHTML = navbar;
