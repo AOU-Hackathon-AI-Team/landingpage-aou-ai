@@ -4,55 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="../../shared/style/fonts.css">
+  <link rel="preconnect" href="/shared/style/fonts.css">
   <link href="../../shared/style/main.css" rel="stylesheet">
   <link href="./index.windi.css" rel="stylesheet">
-  <link href="../../shared/style/fonts.css">
+  <link href="/shared/style/fonts.css">
   <style lang="windi">
-    html {
-      @apply text-[67%];
+    .bg_light {
+      @apply absolute  rounded-full bg-white w-[881px] h-[881px] opacity-60;
+      filter: blur(200px);
+      transform: translate3d(-145vh,40vh,0);
+  
     }
-    body {
-      @apply overflow-y-hidden;
-    }
-    section {
-      @apply flex flex-col   ;
-    }
-    h2 {
-      font-size: clamp(2rem, 20vw, 4.5rem);
-    }
-    main {
-      @apply bg-cover bg-center;
-      background-image: url('../../../../shared/image/noise.png')
-    }
-    
-    .header {
-      @apply flex gap-2rem font-f1 mt-2rem items-center;
-      & .logo {
-        @apply w-200px h-80px bg-gray-500;
-      }
-      & span {
-        @apply mx-20px;
-      }
-      & a {
-        @apply text-2.6rem;
-      }
-    
-    }
-    
-     
+
   </style>
 </head>
 
-<body >
-  <div id="navbar"></div>
-  <main id="fullPage" class="bg-bg-1">
-    
-  <section class=" w-100vw h-100vh">
-  </section>
-  <section class=" w-100vw h-100vh">
-   
-  </section>
+<body dir="rtl">
+  <header class="wrapper" id="navbar"> </header>
+
+  <main class="bg-bg-1">
+
+    <section id="heroBannar" class="wrapper">
+  
+    </section>
+    <section id="about">
+      <img class="bg_track" src="../../shared/image/bg2.svg" >
+      <div id="about_hackathon" class="wrapper">
+        <h2>عن هاكاثون 
+        </h2>
+        <p>سيؤدي الهيدروجين دوراً رئيسياً في الانتقال نحو الطاقة المتجددة، وإزالة الكربون من الاستخدامات النهائية. وستكون التقنيات النظيفة الجديدة لاستخدام الهيدروجين الأخضر، المحرك الرئيسي لمستقبل إزالة الكربون عالمياً.سيؤدي الهيدروجين دوراً رئيسياً في الانتقال نحو الطاقة المتجددة، 
+          
+        </p>
+      </div>
+      <div class="wrapper" id="hackathon_tracks">
+        
+      </div>
+    </section>
   <!-- <section class=" w-100vw h-100vh">
     <header>
       الجوائز     
@@ -67,11 +54,10 @@
  
 </main>
 </body>
-<script src="../../shared/js/navbar.js"></script>
+<script src="/shared/js/navbar.js"></script>
+<script src="/shared/js/heroBanner.js"></script>
+<script src="/shared/js/tracks.js"></script>
+<script src="/shared/module/hero.js" type="module"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="../../shared/js/jquery.fullpage.js"></script>
-<script>
-          $('#fullPage').fullpage();
 
-</script>
 </html>

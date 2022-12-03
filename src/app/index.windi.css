@@ -8,57 +8,14 @@
 .w-100vw {
   width: 100vw;
 }
-html {
-  font-size: 67%;
-  line-height: 1;
-}
-body {
-  overflow-y: hidden;
-}
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-h2 {
-  font-size: clamp(2rem, 20vw, 4.5rem);
-}
-main {
-  background-position: center;
-  background-size: cover;
-  background-image: url('../../../../shared/image/noise.png');
-}
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  font-family: 'Press Start 2P';
-  margin-top: 2rem;
-  grid-gap: 2rem;
-  gap: 2rem;
-}
-.header .logo {
+.bg_light {
   --tw-bg-opacity: 1;
-  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
-  height: 80px;
-  width: 200px;
-}
-.header span {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.header a {
-  font-size: 2.6rem;
-  line-height: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 9999px;
+  height: 881px;
+  opacity: 0.6;
+  position: absolute;
+  width: 881px;
+  filter: blur(200px);
+  transform: translate3d(-145vh,40vh,0);
 }

@@ -2,11 +2,11 @@
 
 const navbar = `
 
-<header class="wrapper" dir="rtl">
+
       <nav>
           <div class="logo">
               <picture>
-                  <img src="../../shared/image/logo-white.png">
+                  <img src="${window.location.origin}/shared/image/logo-white.png">
               </picture>
           </div>
           <ul>
@@ -19,7 +19,6 @@ const navbar = `
               <a>EN</a>
           </span>
       </nav>
-</header>
 `
 
 

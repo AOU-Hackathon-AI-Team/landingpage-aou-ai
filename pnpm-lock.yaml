@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@splinetool/runtime': ^0.9.148
   '@windicss/plugin-icons': ^1.0.2
   '@windicss/plugin-scrollbar': ^1.2.3
   concurrently: ^7.2.1
   windicss: ^3.5.4
+
+dependencies:
+  '@splinetool/runtime': 0.9.148
 
 devDependencies:
   '@windicss/plugin-icons': 1.0.2
@@ -13,6 +17,12 @@ devDependencies:
   windicss: 3.5.6
 
 packages:
+
+  /@splinetool/runtime/0.9.148:
+    resolution: {integrity: sha512-i9wRAm0srmYHtk0fe+ovm+zigRwsijqwqE5DmDk3GxGwb/fQ1sMeglNCwnJpp/xqhWyZ+xBoqCDefRtfRglU8A==}
+    dependencies:
+      on-change: 4.0.2
+    dev: false
 
   /@windicss/plugin-icons/1.0.2:
     resolution: {integrity: sha512-PN6+y9TwEFQn+x6hmCUbCH2YzCfLyImcgQZQQAZ3kCZvqvZDyfKgS9TuhHY1Y0vp12lO6ULFUWpH6YIVGOPM6A==}
@@ -110,6 +120,11 @@ packages:
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
+
+  /on-change/4.0.2:
+    resolution: {integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
 
   /require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
