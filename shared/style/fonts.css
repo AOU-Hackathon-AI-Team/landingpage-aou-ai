@@ -5,3 +5,11 @@
     font-family: 'Raqami';
     src: url(../fonts/Raqami.ttf);
 }
+@font-face {
+    font-family: 'Janna LT';
+    src: url('../fonts/Janna\ LT\ Regular.ttf');
+}
+@font-face {
+    font-family: 'Console';
+    src: url('../fonts/CONSOLA.TTF');
+}

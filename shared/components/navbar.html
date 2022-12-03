@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <title>Document</title>
+    <style lang="windi">
+        .wrapper {
+            @apply sticky top-[30px] z-50;
+            @screen sm {
+                @apply hidden;
+            }
+        }
+        nav {
+            @apply absolute top-[37px] left-0 right-0;
+            @apply w-full border-solid border-[1px] rounded-full border-white h-[60px];
+            @apply flex flex justify-between items-center; 
+            @apply w-full;
+            & ul  {
+                @apply flex gap-[40px] list-none;
+                @apply font-f2 font-bold text-white text-[1.6rem] cursor-pointer;
+                & li.active {
+                    @apply text-co1;
+                    
+                   /* &::after {
+                    @apply content-[''] block w-[6.33px] h-[2.33px] bg-white mt-2 transition-all duration-600;
+              
+                   } */
+                }
+                & li.active:hover {
+                    &::after{
+                        @apply w-[36px] transition-all duration-600;
+                    }
+                }
+            }
+            .logo {
+                @apply my-2 mx-2;
+            }
+            span {
+                @apply text-white  px-[28px] cursor-pointer;
+                & a {
+                    @apply font-f3 text-[2rem];
+                }
+            }
+            
+        }
+    </style>
+</head>
+<body class="bg-bg-1">
+    <header class="wrapper">
+        <nav>
+            <div class="logo">
+                <picture>
+                    <img src="../image/logo-white.png">
+                </picture>
+            </div>
+            <ul>
+                <li class="active"><a>الرئـيسية</a></li>
+                <li><a>المسارات</a></li>
+                <li><a>المزايا</a></li>
+                <li><a>الجوائز</a></li>
+            </ul>
+            <span>
+                <a>EN</a>
+            </span>
+        </nav>
+    </header>
+</body>
+</html>
