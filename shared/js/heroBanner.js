@@ -1,3 +1,4 @@
+
 const heroBanner = `
         <div class="main_text">
             <p>
@@ -9,7 +10,7 @@ const heroBanner = `
             </button>
         </div>
         <picture>
-        <img src="${window.location.origin}/shared/image/hero.png">
+        <img src="${href}/shared/image/hero.png">
     </picture>
        
 `;

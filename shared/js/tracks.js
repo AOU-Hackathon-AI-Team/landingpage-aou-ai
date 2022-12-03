@@ -23,12 +23,12 @@ const data = [
 
 let items= ``;
 data.forEach(ele => {
-
-    console.log('link ==> ', `${window.location.origin}/${ele.img}` )
+    const href = '../../'|| window.location.origin
+    // console.log('link ==> ', `${window.location.origin}/${ele.img}` )
     items += `
     <div class="track_card hidden">
     <picture>
-        <img src="${window.location.origin}/${ele.img}">
+        <img src="${href}/${ele.img}">
     </picture>
     <div>${ele.title}</div>
     <p>${ele.descr}</p>

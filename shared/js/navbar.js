@@ -1,4 +1,5 @@
 
+    const href = '../../'|| window.location.origin
 
 const navbar = `
 
@@ -6,7 +7,7 @@ const navbar = `
       <nav>
           <div class="logo">
               <picture>
-                  <img src="${window.location.origin}/shared/image/logo-white.png">
+                  <img src="${href}/shared/image/logo-white.png">
               </picture>
           </div>
           <ul>
