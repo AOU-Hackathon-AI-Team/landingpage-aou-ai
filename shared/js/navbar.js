@@ -4,7 +4,7 @@
 const navbar = `
 
 
-      <nav>
+      <nav class="navbar">
           <div class="logo">
               <picture>
                   <img src="${href}/shared/image/logo-white.png">
@@ -23,4 +23,4 @@ const navbar = `
 `
 
 
-// document.getElementById('navbar').innerHTML = navbar;
+document.getElementById('navbar').innerHTML = navbar;

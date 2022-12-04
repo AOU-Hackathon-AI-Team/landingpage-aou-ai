@@ -39,6 +39,8 @@ module.exports = {
           4: "#2F3032"
         },
         b: {
+          200: '#AFAFAF',
+          800: "#181818",
           900: '#000',
           
         },
@@ -61,6 +63,7 @@ module.exports = {
         f1: ["'Press Start 2P'"],
         f2: ["'Janna LT'"],
         f3: ["'Console'"],
+        f4: ["'system-ui'"],
       },
       fontWeight: {
       
