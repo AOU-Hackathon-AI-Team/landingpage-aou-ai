@@ -2,9 +2,3 @@
   --tw-bg-opacity: 1;
   background-color: rgba(34, 33, 36, var(--tw-bg-opacity));
 }
-.h-100vh {
-  height: 100vh;
-}
-.w-100vw {
-  width: 100vw;
-}

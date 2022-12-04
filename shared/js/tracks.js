@@ -39,6 +39,7 @@ data.forEach(ele => {
 
 
 document.getElementById('hackathon_tracks').innerHTML = `
+<img class="bg_track" src="${href}/shared/image/bg2.svg" >
 
 <h2>مسارات </h2>
     <div class="tracks ">

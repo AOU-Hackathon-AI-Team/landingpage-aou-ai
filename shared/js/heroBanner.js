@@ -9,9 +9,7 @@ const heroBanner = `
                 شارك الان
             </button>
         </div>
-        <picture>
-        <img src="${href}/shared/image/hero.png">
-    </picture>
+       
        
 `;
-document.getElementById('heroBannar').innerHTML = heroBanner;
+document.querySelector('#heroBannar').innerHTML += heroBanner;
