@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <style lang="windi">
+        
+        #about_hackathon {
+
+            @apply flex flex-col mt-20 items-center justify-center;
+            & h2 {
+                text-shadow: 0px 6px 4px #000000;
+            }
+            & > p{
+                @apply text-white font-f2 font-bold text-[1.3rem] leading-8 w-[95%] text-center max-w-[507px];
+                
+            }
+        }
+        #hackathon_tracks {
+            @apply flex flex-col gap-14 ;
+
+        }
+        .tracks {
+            @apply grid grid-cols-4 gap-8;
+            @apply md:grid-cols-2;
+            @apply sm:grid-cols-1;
+            & .track_card{
+                &:nth-child(1){
+                    @apply delay-75
+                }
+                &:nth-child(2){
+                    @apply delay-200
+                }
+                &:nth-child(3){
+                    @apply delay-400
+                }
+                &:nth-child(4){
+                    @apply delay-600
+                }
+            }
+
+            
+        }
+         .track_card {
+            @apply min-w-[224px] min-h-[224px] rounded-2xl bg-bg-2;
+            @apply flex flex-col px-4 pb-5 justify-between items-center;
+            @apply text-center text-white gap-4 font-f2;
+            @apply sm:(max-w-[224px] max-h-[224px] mx-auto);
+            @apply shadow-[ 0px 4px 9px rgba(0, 0, 0, 0.26)];
+            @apply transition-all duration-500;
+            & picture {
+                @apply mt-[-50px] w-[113px] h-auto;
+                & img {
+                    @apply w-full h-auto;
+                }
+            }
+            & div {
+                @apply text-[1.6rem] font-bold;
+            }
+            & p {
+                @apply text-[1rem] font-normal leading-[14.05px];
+            }
+            &.hidden {
+                @apply opacity-0 transition-all duration-1000;
+                transform: translateX(-100%);
+                filter: blur(10px)
+            }
+            &.show {
+                @apply opacity-100 transition-all duration-1000 ;
+                transform: translateX(0);
+                filter: blur(0)
+            }
+            &:hover {
+                @apply border-solid border-white border-[2px] transition-all duration-500;
+                transform: translateY(-20px);
+
+                & picture {
+                    @apply relative;
+                   
+                    &::after {
+                        content: '';
+                        
+                        filter: blur(42.5px);
+                        @apply bg-white 
+                        @apply absolute top-[0] left-[0] w-full h-full  rounded-full opacity-30 transition-all duration-500;
+
+                    }
+                }
+            }
+         }
+         .bg_track {
+      @apply absolute left-[-0vw] right-[-0vw] w-full  h-[100vh] top-[-310px];
+    }
+    #about {
+        @apply relative  flex flex-col items-center;
+    }
+    </style>
+</head>
+<body class="bg-bg-1">
+    <section id="about">
+        <img class="bg_track" src="../../shared/image/bg2.svg" >
+
+    <div id="about_hackathon">
+        <h2>عن هاكاثون 
+        </h2>
+        <p>سيؤدي الهيدروجين دوراً رئيسياً في الانتقال نحو الطاقة المتجددة، وإزالة الكربون من الاستخدامات النهائية. وستكون التقنيات النظيفة الجديدة لاستخدام الهيدروجين الأخضر، المحرك الرئيسي لمستقبل إزالة الكربون عالمياً.سيؤدي الهيدروجين دوراً رئيسياً في الانتقال نحو الطاقة المتجددة، 
+
+        </p>
+    </div>
+    <div class="wrapper" id="hackathon_tracks">
+    <h2>مسارات الهاكاثون</h2>
+    <div class="tracks ">
+
+        <div class="track_card">
+            <picture>
+                <img src="../image/cube.svg">
+            </picture>
+            <div>التحول الرقمي في التعليم</div>
+            <p>التعليم مسار التحول الرقمي في التعليم يستهدف كل مايتعلق بعملية تطوير طريقة التعليم، وذلك بتوظيف الذكاء الاصطناعي في بيئ ة النظام التعليمي المعتمد، ودمج تقنية المعلومات والاتصالات فيها؛</p>
+        </div>
+
+        <div class="track_card">
+            <picture>
+                <img src="../image/cube.svg">
+            </picture>
+            <div>التحول الرقمي في التعليم</div>
+            <p>التعليم مسار التحول الرقمي في التعليم يستهدف كل مايتعلق بعملية تطوير طريقة التعليم، وذلك بتوظيف الذكاء الاصطناعي في بيئ ة النظام التعليمي المعتمد، ودمج تقنية المعلومات والاتصالات فيها؛</p>
+        </div>
+
+        <div class="track_card">
+            <picture>
+                <img src="../image/cube.svg">
+            </picture>
+            <div>التحول الرقمي في التعليم</div>
+            <p>التعليم مسار التحول الرقمي في التعليم يستهدف كل مايتعلق بعملية تطوير طريقة التعليم، وذلك بتوظيف الذكاء الاصطناعي في بيئ ة النظام التعليمي المعتمد، ودمج تقنية المعلومات والاتصالات فيها؛</p>
+        </div>
+    <div class="track_card">
+        <picture>
+            <img src="../image/cube.svg">
+        </picture>
+        <div>التحول الرقمي في التعليم</div>
+        <p>التعليم مسار التحول الرقمي في التعليم يستهدف كل مايتعلق بعملية تطوير طريقة التعليم، وذلك بتوظيف الذكاء الاصطناعي في بيئ ة النظام التعليمي المعتمد، ودمج تقنية المعلومات والاتصالات فيها؛</p>
+    </div>
+</div>
+</div>
+</section>
+
+</body>
+</html>

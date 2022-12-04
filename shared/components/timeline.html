@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <style lang="windi">
+        .calender {
+            @apply w-full flex flex-col h-full font-f2 text-white p-4 min-h-[655px] ;
+
+
+            & header {
+                @apply bg-bg-2 text-center p-1 text-[1.6rem] h-[36px] flex items-center justify-center;
+            }
+            &         ul {
+            @apply flex w-full justify-between list-none px-0 m-0;
+        }
+       &  #grid {
+            @apply flex-1 relative;
+            & li {
+                @apply border-solid border-[#333333] border-[1px] flex-1 relative;  
+                & .dash {
+                    @apply block w-2 border-dashed border-0 border-bg-3 border-r-[3px] opacity-0 mx-auto h-full ;
+                }
+                &[data-isActive="true"] {
+                    & .dash {
+                    @apply  opacity-100;
+                }
+                }
+            }
+        }
+        & #days {
+            @apply justify-around;
+            & li {
+                @apply flex flex-col items-center justify-center gap-2 w-[60px] h-[60px] rounded-md;
+                @apply text-[2rem] font-bold p-2;
+                &[data-isActive="true"] {
+                    @apply bg-bg-3;
+                }
+            }
+        }
+
+        & .card {
+           @apply flex absolute top-0 right-0 z-10;
+           & > span {
+            @apply relative rounded-full bg-white w-[5px] ml-[-3px];
+           
+           }
+           &[data-is-active="true"] {
+
+            & > span::before {
+                @apply  absolute content-[''] top-0 bottom-0 right-0 left-0 bg-white;
+                filter: blur(5px);
+            }
+            & .content {
+                @apply border-solid border-[#C4E0EF] border-[2px] ;
+
+            }
+           }
+           & .content {
+                @apply h-[65px] flex flex-col justify-center  w-full ;
+                @apply bg-bg-4 rounded-lg gap-4 px-4 rounded-tl-0 rounded-bl-0; 
+                & span {
+                    @apply text-[1.6rem]
+                }
+            }
+        }
+        }
+
+    </style>
+</head>
+
+<body class="bg-bg-1">
+    <section class="wrapper" id="">
+        <div class="calender">
+            <ul id="days">
+            </ul>
+            <header class="">
+                انطلاق الهاكاثون
+            </header>
+            <ul id="grid">
+            </ul>
+        </div>
+    </section>
+
+    
+    
+    <script type="text/javascript" src="../js/timeline.js">
+       
+    </script>
+</body>
+
+</html>
