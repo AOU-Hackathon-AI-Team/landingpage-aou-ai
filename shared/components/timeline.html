@@ -16,12 +16,10 @@
             & header {
                 @apply bg-bg-2 text-center p-1 text-[1.6rem] h-[36px] flex items-center justify-center;
             }
-
-        }
-        ul {
+            &         ul {
             @apply flex w-full justify-between list-none px-0 m-0;
         }
-        #grid {
+       &  #grid {
             @apply flex-1 relative;
             & li {
                 @apply border-solid border-[#333333] border-[1px] flex-1 relative;  
@@ -35,7 +33,7 @@
                 }
             }
         }
-        #days {
+        & #days {
             @apply justify-around;
             & li {
                 @apply flex flex-col items-center justify-center gap-2 w-[60px] h-[60px] rounded-md;
@@ -46,7 +44,7 @@
             }
         }
 
-        .card {
+        & .card {
            @apply flex absolute top-0 right-0 z-10;
            & > span {
             @apply relative rounded-full bg-white w-[5px] ml-[-3px];
@@ -71,6 +69,8 @@
                 }
             }
         }
+        }
+
     </style>
 </head>
 

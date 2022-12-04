@@ -17,9 +17,7 @@
     body  {
         @apply absolute top-0 right-0 left-0 bottom-0 overflow-x-hidden;
     }
-        main {
-            @apply  pb-20;
-        }
+
         .wrapper {
       @apply max-w-[1280px] mx-auto w-full;
       @apply  sm:(max-w-[90%])
@@ -37,6 +35,12 @@
 
         section {
             @apply w-[100%] h-[100%] overflow-hidden py-20 min-h-[832px];
+        }
+        a {
+            @apply underline-transparent;
+            &[href] {
+                color:inherit
+            }
         }
     </style>
 </head>
