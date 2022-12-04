@@ -32,7 +32,9 @@
             @apply text-[2.9rem]
         }
 
-
+        .wrapper3 {
+            @apply w-full relative;
+        }
         section {
             @apply w-[100%] h-[100%] overflow-hidden py-20 min-h-[832px];
         }
@@ -40,6 +42,13 @@
             @apply underline-transparent;
             &[href] {
                 color:inherit
+            }
+        }
+
+        #axsonGif {
+            @apply absolute bottom-0 left-0 w-[80%];
+            & img {
+                @apply w-full;
             }
         }
     </style>

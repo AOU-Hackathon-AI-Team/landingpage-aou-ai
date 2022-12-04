@@ -13,17 +13,17 @@
             grid-template-columns:38%  60% ;
 
             @screen md {
-                @apply flex flex-col-reverse;
+            grid-template-columns:100% ;
 
             }
             @screen sm {
-                @apply flex flex-col-reverse;
+                grid-template-columns:100% ;
 
             }
             & picture {
-                @apply self-end;
+                @apply self-end absolute bottom-0 left-0;
                 & img {
-                    @apply w-[90%] h-auto;
+                    @apply w-full h-auto;
                 }
            @screen md {
                 @apply w-full h-auto;
@@ -54,7 +54,7 @@
             </button>
         </div>
         <picture>
-            <img src="../image/hero.png">
+            <img src="../image/Axongif.webp">
         </picture>
   
   
